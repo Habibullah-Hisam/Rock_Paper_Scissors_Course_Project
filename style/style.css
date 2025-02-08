@@ -8,6 +8,23 @@ body{
   font-weight: bolder;
  }
 
+ .container{
+  display: grid;
+  position: relative;
+  height: 100vh;
+ }
+
+ .all{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  width: 500px;
+  height: 520px;
+  overflow: hidden;
+}
+
  .resultP{
   font-size: 25px;
   margin-bottom: 0px;
@@ -65,17 +82,19 @@ body{
  transition: transform .15s;
  }
 
- .actionButton:active,
- .actionButton3:active
- {
-  transform: rotate(-90deg);
-  opacity: 1;
+ .actionButton:active{
+  transform: rotate(60deg);
  }
-
  
  .actionButton2:active{
-  transform: rotate(90deg);
+  transform: rotate(-30deg);
  }
+
+ .actionButton3:active
+ {
+  transform: rotate(65deg); 
+  opacity: 1;
+ } 
 
 
 

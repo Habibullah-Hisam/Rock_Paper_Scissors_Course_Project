@@ -25,11 +25,11 @@ let output = document.getElementById("displayResult");
  function ComputerMove() {
    let randomNumber = (Math.random());
    if (randomNumber >= 0 && randomNumber < 1/3){
-     cMove = '✊';
+     cMove = '🗿';
     } else if (randomNumber >= 1/3 && randomNumber < 2/3){
-      cMove = '🖐';
+      cMove = '📜';
     } else {
-      cMove = '✌';
+      cMove = '🔪';
     };
 
   };
@@ -39,17 +39,17 @@ function playGame(pMove) {
   ComputerMove();
   if (pMove == cMove) { 
     result = 'Tie';
-  } else if (pMove == '✊' && cMove == '🖐') {
+  } else if (pMove == '🗿' && cMove == '📜') {
     result = 'You lose';
-  }else if (pMove == '✊' && cMove == '✌') {
+  }else if (pMove == '🗿' && cMove == '🔪') {
     result = 'You win';
-  }else if (pMove == '✌' && cMove == '🖐') {
+  }else if (pMove == '🔪' && cMove == '📜') {
     result = 'You win';
-  }else if (pMove == '✌' && cMove == '✊') {
+  }else if (pMove == '🔪' && cMove == '🗿') {
    result = 'You lose';
-  }else if (pMove == '🖐' && cMove == '✊') {
+  }else if (pMove == '📜' && cMove == '🗿') {
     result = 'You win';
-  }else if (pMove == '🖐' && cMove == '✌') {
+  }else if (pMove == '📜' && cMove == '🔪') {
     result = 'You lose';
   };
  
@@ -79,24 +79,24 @@ function playGame(pMove) {
 
 
 document.querySelector('.actionButton').addEventListener('click', () => {
-  playGame('✊')
+  playGame('🗿')
 });
 
 document.querySelector('.actionButton2').addEventListener('click', () => {
-  playGame('🖐')
+  playGame('📜')
 });
 
 document.querySelector('.actionButton3').addEventListener('click', () => {
-  playGame('✌')
+  playGame('🔪')
 });
 
 document.body.addEventListener('keydown', (event) => {
   if(event.key === 'r') {
-    playGame('✊');
+    playGame('🗿');
   } else if (event.key === 'p') {
-    playGame('🖐')
+    playGame('📜')
   } else if (event.key === 's') {
-    playGame('✌')
+    playGame('🔪')
   };
 });
 
@@ -106,11 +106,11 @@ let pRMove = '';
 function PlayersRandomMoveByComputer() {
   let randomNumber = (Math.random());
   if (randomNumber >= 0 && randomNumber < 1/3){
-  pRMove = '✊';
+  pRMove = '🗿';
   } else if (randomNumber >= 1/3 && randomNumber < 2/3){
-  pRMove = '🖐';
+  pRMove = '📜';
   } else {
-  pRMove = '✌';
+  pRMove = '🔪';
   };
 };
 
